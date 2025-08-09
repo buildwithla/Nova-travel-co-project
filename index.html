@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Travel & Co. - Explore the World with Confidence</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/5bfc3296-6d04-4bcf-db4e-7f53e9eba200/publicContain"
+                    alt="Nova Travel & Co. Logo" class="logo-img">
+                <h2>Nova Travel & Co.</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#featured" class="nav-link">Destinations</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-carousel">
+            <div class="carousel-slide active" style="background-image: url('img/bg-img1.jpg')"></div>
+            <div class="carousel-slide" style="background-image: url('img/bg-img2.jpg')"></div>
+            <div class="carousel-slide" style="background-image: url('img/bg-img3.jpg')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Explore the World with Confidence</h1>
+            <p class="hero-subtitle">Your trusted partner for seamless travel experiences, from flight bookings to
+                complete vacation planning</p>
+            <button class="cta-button">Start Your Journey</button>
+        </div>
+        <div class="carousel-controls">
+            <button class="carousel-btn prev-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="carousel-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+            <button class="carousel-btn next-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive travel solutions tailored to your needs</p>
+            </div>
+            <div class="services-content">
+                <div class="services-images">
+                    <div class="main-service-image">
+                        <img src="img/section-img1.jpg" alt="Travel Services" class="services-bg-img">
+                        <div class="services-image-overlay">
+                            <h3>Your Journey Begins Here</h3>
+                            <p>Experience world-class travel services with our expert team</p>
+                        </div>
+                    </div>
+                    <div class="destination-grid">
+                        <div class="destination-row">
+                            <div class="destination-image">
+                                <img src="img/london-img.jpg" alt="London Travel" class="services-bg-img">
+                                <div class="image-overlay-small">
+                                    <h4>London</h4>
+                                    <p>British capital</p>
+                                </div>
+                            </div>
+                            <div class="destination-image">
+                                <img src="img/paris-img.jpg" alt="Paris Travel" class="services-bg-img">
+                                <div class="image-overlay-small">
+                                    <h4>Paris</h4>
+                                    <p>City of Light</p>
+                                </div>
+                            </div>
+                            <div class="destination-image">
+                                <img src="img/newyorkcity-img.jpg" alt="New york" class="services-bg-img">
+                                <div class="image-overlay-small">
+                                    <h4>New York</h4>
+                                    <p>The Big Apple</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="destination-row">
+                            <div class="destination-image">
+                                <img src="img/tokyojapan-img.jpg" alt="Tokyo Japan Travel" class="services-bg-img">
+                                <div class="image-overlay-small">
+                                    <h4>Tokyo</h4>
+                                    <p>Land of Rising Sun</p>
+                                </div>
+                            </div>
+                            <div class="destination-image">
+                                <img src="img/dubai-img.jpg" alt="Dubai Travel" class="services-bg-img">
+                                <div class="image-overlay-small">
+                                    <h4>Dubai</h4>
+                                    <p>City of Gold</p>
+                                </div>
+                            </div>
+                            <div class="destination-image">
+                                <img src="img/nigeria-img.jpg" alt="Nigeria Travel" class="services-bg-img">
+                                <div class="image-overlay-small">
+                                    <h4>Nigeria</h4>
+                                    <p>Giant of Africa</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="destination-row">
+                            <div class="destination-image wide">
+                                <img src="img/southafrica-img.jpg" alt="South Africa Travel" class="services-bg-img">
+                                <div class="image-overlay-small">
+                                    <h4>South Africa</h4>
+                                    <p>Rainbow Nation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h3>Flight Bookings</h3>
+                        <p>Domestic and international flights with competitive prices and flexible options</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-passport"></i>
+                        </div>
+                        <h3>Visa Assistance</h3>
+                        <p>Tourist and work visa processing with expert guidance and fast turnaround</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3>Vacation Planning</h3>
+                        <p>Custom vacation packages with accommodation, activities, and transportation</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Travel Consulting</h3>
+                        <p>Professional travel advice and 24/7 support throughout your journey</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="about" class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Nova Travel & Co.</h2>
+                <p>Your trusted partner for unforgettable travel experiences</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Reliability</h3>
+                    <p>Licensed and certified travel agency with years of experience</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Coverage</h3>
+                    <p>Worldwide destinations and partnerships with leading airlines</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Fast Support</h3>
+                    <p>24/7 customer support with quick response times</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Expert Agents</h3>
+                    <p>Professional travel consultants with deep industry knowledge</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Destination Section -->
+    <section id="featured" class="featured-destination">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Destination</h2>
+                <p>Discover our most popular travel destinations</p>
+            </div>
+            <div class="destination-showcase">
+                <div class="destination-image">
+                    <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/3f7f4661-d1ca-4902-e026-2c7cf65d6700/publicContain"
+                        alt="Featured Travel Destination" class="showcase-img">
+                    <div class="image-overlay">
+                        <div class="overlay-content">
+                            <h3>Exotic Paradise</h3>
+                            <p>Experience the ultimate luxury travel destination</p>
+                            <button class="explore-btn">Explore Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Premium Experience</h4>
+                        <p>Luxury accommodations and exclusive travel packages</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h4>Curated Itineraries</h4>
+                        <p>Personalized travel plans tailored to your preferences</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-concierge-bell"></i>
+                        </div>
+                        <h4>VIP Service</h4>
+                        <p>Dedicated travel concierge and 24/7 support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="reviews" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Real experiences from satisfied travelers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Nova Travel made our honeymoon planning effortless. Their attention to detail and
+                            personalized service exceeded our expectations."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah & Emeka Johnson</h4>
+                            <p>Honeymoon in Bali</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Fast visa processing and excellent flight deals. The team at Nova Travel is professional and
+                            reliable. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>David Ademola</h4>
+                            <p>Business Traveler</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Our family vacation was perfectly organized. From flights to hotels, everything was
+                            seamless. Thank you Nova Travel!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Amina Bello</h4>
+                            <p>Family Vacation in Europe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to start your journey? Contact us today</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Service Type</option>
+                                <option value="flight">Flight Booking</option>
+                                <option value="visa">Visa Assistance</option>
+                                <option value="vacation">Vacation Planning</option>
+                                <option value="consulting">Travel Consulting</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Our Location</h4>
+                            <p>23B Pascal Street, Lekki Phase 1, Lagos, Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p>+234 907 799 7470</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+234 907 799 7470</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@novatravel.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/5bfc3296-6d04-4bcf-db4e-7f53e9eba200/publicContain"
+                            alt="Nova Travel & Co. Logo" class="footer-logo-img">
+                        <h3>Nova Travel & Co.</h3>
+                    </div>
+                    <p>Your trusted partner for seamless travel experiences worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Flight Bookings</a></li>
+                        <li><a href="#services">Visa Assistance</a></li>
+                        <li><a href="#services">Vacation Planning</a></li>
+                        <li><a href="#services">Travel Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>23B Pascal Street, Lekki Phase 1, Lagos, Nigeria</p>
+                    <p><i class="fas fa-phone"></i> +234 907 799 7470</p>
+                    <p><i class="fas fa-envelope"></i> info@novatravel.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nova Travel & Co. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- WhatsApp Chatbot Widget -->
+    <div class="whatsapp-chatbot">
+        <div class="chat-text">Chat with us</div>
+        <a href="https://wa.me/2349072773490?text=Hi%20there!%20I%20need%20help%20booking%20a%20trip." target="_blank"
+            class="chat-icon" aria-label="Chat on WhatsApp">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg" alt="WhatsApp Icon">
+        </a>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
