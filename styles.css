@@ -1366,27 +1366,18 @@ section {
     }
 }
 
-/* Mobile layout fix for Our Services section */
+/* Mobile-optimized service section images */
 @media (max-width: 768px) {
-    .services-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        /* space between images */
-        text-align: center;
-        /* center text for each service */
-    }
 
-    .services-container img {
-        width: 90%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .services-container .service-item {
-        max-width: 400px;
-        /* keeps each service neatly contained */
+    .services-bg-img,
+    .destination-image {
+        width: 100%;
+        /* Fill the screen width */
+        height: 250px;
+        /* Adjust height for better mobile fit */
+        object-fit: cover;
+        /* Fill space without stretching */
+        object-position: center;
+        /* Keep subject centered */
     }
 }
