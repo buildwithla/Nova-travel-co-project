@@ -296,158 +296,32 @@ body {
     z-index: 10;
 }
 
-/* Sections */
-section {
-    padding: 80px 0;
-}
-
-.section-header {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.section-header h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
-    background: linear-gradient(45deg, #ffffff, #8b5cf6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    letter-spacing: 0.8px;
-    line-height: 1.3;
-}
-
-.section-header p {
-    font-size: 1.1rem;
-    color: #e2e8f0;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
 /* Services Section */
 .services {
     background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
 }
 
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
-
-.service-card {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 40px 30px;
-    border-radius: 20px;
-    text-align: center;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.1);
-    border-color: #8b5cf6;
-}
-
-.service-icon {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(45deg, #8b5cf6, #f59e0b);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px;
-    font-size: 2rem;
-    color: #ffffff;
-}
-
-.service-card h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #ffffff;
-}
-
-.service-card p {
-    color: #cbd5e1;
-    line-height: 1.6;
-}
-
-/* Why Choose Us Section */
-.why-choose-us {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-}
-
-.features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-}
-
-.feature-card {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.1);
-    border-color: #f59e0b;
-}
-
-.feature-icon {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(45deg, #f59e0b, #8b5cf6);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px;
-    font-size: 1.5rem;
-    color: #ffffff;
-}
-
-.feature-card h3 {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #ffffff;
-}
-
-.feature-card p {
-    color: #cbd5e1;
-    line-height: 1.6;
-}
-
-/* Services Section */
-.services {
-    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    align-items: stretch;
+    /* equal height rows */
 }
 
 .service-card {
     background: rgba(255, 255, 255, 0.05);
     padding: 40px 30px;
     border-radius: 20px;
-    text-align: center;
-    transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
 }
 
 .service-card:hover {
@@ -464,21 +338,72 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 20px;
     font-size: 2rem;
     color: #ffffff;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+    /* keep icon size fixed */
+}
+
+.service-card img {
+    max-width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    flex-shrink: 0;
+    /* keep image height fixed */
 }
 
 .service-card h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #ffffff;
+    min-height: 50px;
+    /* keeps titles aligned */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .service-card p {
     color: #cbd5e1;
     line-height: 1.6;
+    font-size: 0.95rem;
+    flex-grow: 1;
+    /* stretches to fill space evenly */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    min-height: 70px;
+    /* keeps text blocks aligned */
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+    .services-grid {
+        gap: 20px;
+    }
+
+    .service-card {
+        padding: 25px 20px;
+    }
+
+    .service-card img {
+        height: 150px;
+    }
+
+    .service-card h3 {
+        font-size: 1.3rem;
+        min-height: auto;
+    }
+
+    .service-card p {
+        font-size: 0.9rem;
+        min-height: auto;
+    }
 }
 
 /* Why Choose Us Section */
@@ -1346,38 +1271,4 @@ section {
     }
 
 
-}
-
-/* Mobile layout fix for Our Services section */
-@media (max-width: 768px) {
-    .services-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        /* space between images */
-    }
-
-    .services-container img {
-        width: 90%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-}
-
-/* Mobile-optimized service section images */
-@media (max-width: 768px) {
-
-    .services-bg-img,
-    .destination-image {
-        width: 100%;
-        /* Fill the screen width */
-        height: 250px;
-        /* Adjust height for better mobile fit */
-        object-fit: cover;
-        /* Fill space without stretching */
-        object-position: center;
-        /* Keep subject centered */
-    }
 }
