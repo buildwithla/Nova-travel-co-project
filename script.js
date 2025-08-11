@@ -231,5 +231,22 @@ function typeWriter(element, text, speed = 100) {
 // if (heroTitle) {
 //     const originalText = heroTitle.textContent;
 //     typeWriter(heroTitle, originalText, 50);
-// } 
+// }
+
+// Navbar hamburger toggle for mobile
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+    // Optional: close menu when link clicked
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+});
 

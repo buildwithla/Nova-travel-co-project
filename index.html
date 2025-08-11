@@ -472,3 +472,115 @@ document.addEventListener("DOMContentLoaded", function() {
 </body>
 
 </html>
+
+<style>
+/* --- Navbar Mobile Styles --- */
+@media (max-width: 900px) {
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        width: 70vw;
+        height: 100vh;
+        background: #23244a;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 4rem 2rem 2rem 2rem;
+        gap: 2rem;
+        box-shadow: -2px 0 16px rgba(139,92,246,0.12);
+        transition: right 0.3s cubic-bezier(.77,0,.18,1);
+        z-index: 999;
+    }
+    .nav-menu.active {
+        right: 0;
+    }
+    .nav-link {
+        font-size: 1.15rem;
+        color: #f59e0b;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #8b5cf6;
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 38px;
+        height: 38px;
+        z-index: 1001;
+    }
+    .bar {
+        width: 28px;
+        height: 4px;
+        background: #8b5cf6;
+        margin: 4px 0;
+        border-radius: 2px;
+        transition: all 0.3s;
+    }
+    .nav-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* Hamburger animation (optional) */
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* --- Featured Destination Mobile Styles --- */
+@media (max-width: 700px) {
+    .featured-destination .destination-showcase {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .destination-image {
+        min-width: unset;
+        max-width: 100vw;
+        border-radius: 14px;
+        margin-bottom: 1rem;
+    }
+    .showcase-img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 14px;
+    }
+    .image-overlay {
+        padding: 1.2rem 1rem 1rem 1rem;
+        border-radius: 0 0 14px 14px;
+        font-size: 1rem;
+    }
+    .overlay-content h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.4rem;
+    }
+    .overlay-content p {
+        font-size: 0.98rem;
+        margin-bottom: 0.8rem;
+    }
+    .explore-btn {
+        padding: 0.6rem 1.1rem;
+        font-size: 0.98rem;
+    }
+}
+
+/* --- Why Choose Us Section: h2 Mobile Size --- */
+@media (max-width: 700px) {
+    .why-choose-us .section-header h2 {
+        font-size: 1.3rem;
+    }
+}
+</style>
